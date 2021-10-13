@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>网页名称-python crawler</title>
+	<style>
+	.abc {
+		color: blue;
+		font-size: 40px;	
+	}
+
+	#i-am-id {
+		background-color: LightCyan;
+	}
+
+	table, th, td {
+		border: 1px solid black;
+	    border-collapse: collapse;
+	}
+	th, td {
+		padding: 10px;
+	}
+	</style>
+</head>
+<body>
+	<h1>Python 爬虫实战</h1>
+	<h2>这是 h2 标签的内容</h2>
+	<h3>这是 h3 标签的内容</h3>
+	<h4>我是 h4</h4>
+
+
+	<p title="i-am-title">这是 p 标签的内容</p>
+
+	<div> 
+	这是 div 标签的内容，
+	即使换行写，网页显示出的文字一样是不会换行
+	</div>
+
+	<p>但如果用了 br 标签 <br/> 就可以顺利断行了</p>
+	
+	<div class = "zzz" id = "id1">
+	我是有着属性 class="zzz" 的标签内容
+	</div>
+	<p hidden>python_crawler</p>
+	<div id = "value-of-attr">
+	我是有着属性 id="value-of-attr" 的标签内容
+	
+		<table id = "i-am-id">
+		  <tr>
+			<th>标头 1 (table-header)</th>
+			<th>标头 2 (table-header)</th>
+			<th>标头 3 (table-header)</th>
+			<th>标头 4 (table-header)</th>
+		  </tr>
+		  <tr>
+			<td> 列2 栏1 </td>
+			<td class = "zzz"> 列2 栏2 (我的属性 class="zzz") </td>
+			<td> 
+				<a href = "https://www.bing.com/">列2 栏3 (我是 a 标签，属性 href=网址) </a> 
+			</td>
+			<td> 
+				<a href = "https://vip.iqiyi.com/?fv=zz_57b2d4c27f403-159988165-224842">列2 栏4 (爱奇艺) </a>  
+			</td>
+		  </tr>
+		  <tr>
+			<td value = "5566">列3 栏1 </td>
+			<td>列3 栏2
+				<ol>
+					<li class = "zz">我是 li 属性 (列表)，属性 class="zz" </li>
+					<li> 第二個 li 属性 </li>
+				</ol>
+			</td>
+			<td>
+				<a href = "https://www.jd.com//" id = "hyperlink"> 列3 欄3 (京东)</a>
+			</td>
+			<td class = "zzzz">列3 栏4 (我的属性 class="zzzz")</td>
+		  </tr>
+
+		</table>
+	</div>
+
+	<p>python_crawler</p>
+
+</body>
+</html>
